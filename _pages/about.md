@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: B.Sc. of Applied Mathematics & Computer Science Sharif University of Technology.
+subtitle: B.Sc. of Applied Mathematics & Computer Science at Sharif University of Technology
 
 
 profile:
