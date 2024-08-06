@@ -18,7 +18,7 @@ social: true  # includes social icons at the bottom of the page
 preprints:
   title: "Emo3D: Translating Emotion Descriptions to 3D Facial Expressions, Benchmark Dataset and Evaluation Metrics"
   authors: "Mahshid Dehghani, Amirahmad Shafiee, Ali Shafiei, **Neda Fallah**, Farahmand Alizadeh, Mohammad Mehdi Gholinejad, Hamid Behroozi, Jafar Habibi, Ehsaneddin Asgari"
-  date: "09 Apr 2024 (modified: 21 Jul 2024)"
+  date: "09 Apr 2024"
   summary: "The Emo3D paper introduces a novel dataset combining text, images, and 3D blendshapes to improve 3D facial emotion modeling. It proposes a new evaluation metric for better assessing visual-text alignment and semantic richness in 3D facial expressions."
   primary_subject: "Vision and Language"
   secondary_subjects: "Media Interpretation, Multimedia Foundation Models"
