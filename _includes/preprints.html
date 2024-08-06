@@ -2,18 +2,6 @@
   <h3>Preprint</h3>
   <div class="preprint-entry">
     <h4>{{ page.preprints.title }}</h4>
-    <p><strong>Authors:</strong> 
-      <span style="white-space: nowrap;">
-        {% assign authors = page.preprints.authors | split: ',' %}
-        {% for author in authors %}
-          {% if author contains 'Neda Fallah' %}
-            <strong>{{ author | strip }}</strong>{% unless forloop.last %}, {% endunless %}
-          {% else %}
-            {{ author | strip }}{% unless forloop.last %}, {% endunless %}
-          {% endif %}
-        {% endfor %}
-      </span>
-    </p>
     <p><strong>Submission Date:</strong> {{ page.preprints.date }}</p>
     <p><strong>Summary:</strong> {{ page.preprints.summary }}</p>
     <p><strong>Primary Subject Area:</strong> {{ page.preprints.primary_subject }}</p>
