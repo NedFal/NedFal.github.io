@@ -17,6 +17,9 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hello there!
-I have graduated in Applied Math and Computer Science from Sharif University of Technology.
-I am interested in Natural Language Processing and Multimodal work. I have participated in several research projects in this field.
+Hello!<br>
+
+I hold a degree in Applied Mathematics and Computer Science from Sharif University of Technology.<br>
+My primary interests lie in Natural Language Processing and Multimodal research, and I have actively participated in several projects within these fields.<br>
+
+
