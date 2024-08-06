@@ -24,3 +24,29 @@ preprints:
   secondary_subjects: "Media Interpretation, Multimedia Foundation Models"
   pdf_url: "/assets/pdf/emo3d.pdf"
 ---
+
+Hello!<br>
+
+I hold a degree in Applied Mathematics and Computer Science from Sharif University of Technology.<br>
+My primary interests lie in Natural Language Processing and Multimodal research, and I have actively participated in several projects within these fields.<br>
+
+Download my <a href="https://github.com/NedFal/NedFal.github.io/blob/master/assets/pdf/nedcv.pdf" target="_blank"> CV</a>.<br><br>
+
+### Preprint
+
+**Title:** {{ page.preprints.title }}<br>
+**Authors:** 
+{% assign authors = page.preprints.authors | split: ',' %}
+{% for author in authors %}
+  {% if author contains 'Neda Fallah' %}
+    <strong>{{ author }}</strong>{% if forloop.last == false %}, {% endif %}
+  {% else %}
+    {{ author }}{% if forloop.last == false %}, {% endif %}
+  {% endif %}
+{% endfor %}<br>
+**Submission Date:** {{ page.preprints.date }}<br>
+**Summary:** {{ page.preprints.summary }}<br>
+**Primary Subject Area:** {{ page.preprints.primary_subject }}<br>
+**Secondary Subject Areas:** {{ page.preprints.secondary_subjects }}<br>
+<a href="{{ page.preprints.pdf_url | relative_url }}" class="btn btn-primary" target="_blank">Download PDF</a>
+
