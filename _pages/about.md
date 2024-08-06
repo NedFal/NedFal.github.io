@@ -22,4 +22,4 @@ Hello!<br>
 I hold a degree in Applied Mathematics and Computer Science from Sharif University of Technology.<br>
 My primary interests lie in Natural Language Processing and Multimodal research, and I have actively participated in several projects within these fields.<br>
 
-<a href="{{ site.baseurl }}/assets/pdf/nedcv.pdf" target="_blank">Download my CV</a>
+<a href="https://github.com/NedFal/NedFal.github.io/blob/master/assets/pdf/nedcv.pdf" target="_blank">Download my CV</a>
