@@ -36,7 +36,6 @@ Download my <a href="https://github.com/NedFal/NedFal.github.io/blob/master/asse
 
 **Title:** {{ page.preprints.title }}<br>
 **Authors:** 
-Authors: 
 {% assign authors = page.preprints.authors | split: ',' %}
 {% for author in authors %}
   {% if author contains 'Neda Fallah' %}
