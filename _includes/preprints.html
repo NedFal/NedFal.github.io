@@ -6,9 +6,9 @@
       {% assign authors = page.preprints.authors | split: ',' %}
       {% for author in authors %}
         {% if author contains 'Neda Fallah' %}
-          <strong>{{ author }}</strong>{% if forloop.last == false %}, {% endif %}
+          <strong>{{ author }}</strong>{% unless forloop.last %}, {% endunless %}
         {% else %}
-          {{ author }}{% if forloop.last == false %}, {% endif %}
+          {{ author }}{% unless forloop.last %}, {% endunless %}
         {% endif %}
       {% endfor %}
     </p>
@@ -16,6 +16,6 @@
     <p><strong>Summary:</strong> {{ page.preprints.summary }}</p>
     <p><strong>Primary Subject Area:</strong> {{ page.preprints.primary_subject }}</p>
     <p><strong>Secondary Subject Areas:</strong> {{ page.preprints.secondary_subjects }}</p>
-    <p><a href="{{ page.preprints.url | relative_url }}" class="btn btn-primary" target="_blank">Download PDF</a></p>
+    <p><a href="{{ page.preprints.url | relative_url }}" class="btn btn-primary" target="_blank">Preprint's PDF</a></p>
   </div>
 </div>
