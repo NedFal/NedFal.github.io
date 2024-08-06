@@ -1,7 +1,21 @@
-<ul class="preprints-list">
-  {% for preprint in page.preprints %}
-    <li>
-      <a href="{{ preprint.url | relative_url }}" target="_blank">{{ preprint.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+<div class="preprints">
+  <h3>Preprint</h3>
+  <div class="preprint-entry">
+    <h4>{{ page.preprints.title }}</h4>
+    <p><strong>Authors:</strong> 
+      {% assign authors = page.preprints.authors | split: ',' %}
+      {% for author in authors %}
+        {% if author contains 'Neda Fallah' %}
+          <strong>{{ author }}</strong>{% if forloop.last == false %}, {% endif %}
+        {% else %}
+          {{ author }}{% if forloop.last == false %}, {% endif %}
+        {% endif %}
+      {% endfor %}
+    </p>
+    <p><strong>Submission Date:</strong> {{ page.preprints.date }}</p>
+    <p><strong>Summary:</strong> {{ page.preprints.summary }}</p>
+    <p><strong>Primary Subject Area:</strong> {{ page.preprints.primary_subject }}</p>
+    <p><strong>Secondary Subject Areas:</strong> {{ page.preprints.secondary_subjects }}</p>
+    <p><a href="{{ page.preprints.url | relative_url }}" class="btn btn-primary" target="_blank">Download PDF</a></p>
+  </div>
+</div>
