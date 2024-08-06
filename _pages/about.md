@@ -2,12 +2,13 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>B.Sc. of Applied Mathematics & Computer Science Sharif University of Technology</a>.
+subtitle: B.Sc. of Applied Mathematics & Computer Science Sharif University of Technology.
+
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: true # crops the image to make it circular
+  image_circular: false # crops the image to make it circular
   more_info: >
 
 
