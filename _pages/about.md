@@ -36,17 +36,18 @@ Download my <a href="https://github.com/NedFal/NedFal.github.io/blob/master/asse
 
 **Title:** {{ page.preprints.title }}<br>
 **Authors:** 
+Authors: 
 {% assign authors = page.preprints.authors | split: ',' %}
 {% for author in authors %}
   {% if author contains 'Neda Fallah' %}
-    <strong>{{ author }}</strong>{% if forloop.last == false %}, {% endif %}
+    {{ author }}{% unless forloop.last %}, {% endunless %}
   {% else %}
-    {{ author }}{% if forloop.last == false %}, {% endif %}
+    {{ author }}{% unless forloop.last %}, {% endunless %}
   {% endif %}
-{% endfor %}<br>
+{% endfor %}
 **Submission Date:** {{ page.preprints.date }}<br>
 **Summary:** {{ page.preprints.summary }}<br>
 **Primary Subject Area:** {{ page.preprints.primary_subject }}<br>
 **Secondary Subject Areas:** {{ page.preprints.secondary_subjects }}<br>
-<a href="{{ page.preprints.pdf_url | relative_url }}" class="btn btn-primary" target="_blank">Download PDF</a>
+<a href="{{ page.preprints.pdf_url | relative_url }}" class="btn btn-primary" target="_blank">Preprint's PDF</a>
 
