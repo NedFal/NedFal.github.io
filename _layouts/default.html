@@ -3,10 +3,15 @@
 
   <!-- Head -->
   <head>
-  {%- if page.redirect -%}
-    <meta http-equiv="refresh" content="3; url={{ site.baseurl }}/" />
-  {%- endif -%}
-  {% include head.html %}
+    {%- if page.redirect -%}
+      <meta http-equiv="refresh" content="3; url={{ site.baseurl }}/" />
+    {%- endif -%}
+    {% include head.html %}
+    <style>
+      .custom-subtitle {
+        color: #2d4154; /* Replace with your desired color */
+      }
+    </style>
   </head>
 
   <!-- Body -->
